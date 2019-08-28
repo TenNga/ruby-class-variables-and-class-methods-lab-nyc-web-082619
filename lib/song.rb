@@ -27,7 +27,7 @@ class Song
   def self.genre_count
     genreCount = {}
     @@genres.each do |genre|
-      if genreCount.key.include(genre)
+      if genreCount.key?(genre)
         genreCount[genre] += 1 
       else 
         genreCount[genre] = 1
